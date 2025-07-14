@@ -11,7 +11,14 @@ const StyledBackLink = styled(StyledLink)`
 export default function CreatePlacePage() {
   const router = useRouter();
   async function addPlace(place) {
-    console.log("adding place");
+    const response = await fetch("/api/places/", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(place),
+    });
+    if (response.ok) {
+      router.push("/");
+    }
   }
 
   return (

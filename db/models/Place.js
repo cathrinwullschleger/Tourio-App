@@ -8,12 +8,10 @@ const placeSchema = new Schema({
   image: {
     type: String,
     required: true,
-    match: /^https?:\/\/.+/, // Validiert, dass es eine URL ist
   },
   mapURL: {
     type: String,
     required: true,
-    match: /^https?:\/\/.+/, // Auch hier URL-Validator
   },
   description: {
     type: String,
