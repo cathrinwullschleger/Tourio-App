@@ -20,6 +20,19 @@ const nextConfig = {
         hostname: "images.unsplash.com",
         port: "",
       },
+
+      {
+        protocol: "https",
+        hostname: "blog.ankerherz.de",
+        port: "",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "www.shmh.de",
+        port: "",
+        pathname: "/**",
+      },
     ],
   },
 };
